@@ -40,6 +40,11 @@
 
     border-radius: 13px;
     padding: 6px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-content>div:nth-child(1):hover,

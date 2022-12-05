@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            background: #222222;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            width: 1000px;
+            height: 600px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            background: rgba(255, 255, 255, .2);
+            box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, .2);
+        }
+
+        .center {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: white;
+            transform-origin: 50%;
+
+            position: absolute;
+            z-index: 88;
+            animation: crc .5s infinite alternate ease;
+
+        }
+
+        .circle-shadow {
+            width: 5px;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.9);
+            filter: blur(1px);
+            z-index: 55;
+            bottom: 45%;
+
+            position: absolute;
+            animation: shadow-crc .5s infinite alternate ease;
+        }
+
+        .circle:nth-child(1) {
+            left: 25%;
+            animation-delay: 0ms;
+        }
+
+        .circle:nth-child(2) {
+            left: 45%;
+            animation-delay: 200ms;
+        }
+
+        .circle:nth-child(3) {
+            right: 25%;
+            animation-delay: 400ms;
+        }
+
+        .circle-shadow:nth-child(4) {
+            left: 29%;
+            animation-delay: 0ms;
+        }
+
+        .circle-shadow:nth-child(5) {
+            left: 49%;
+            animation-delay: 200ms;
+        }
+
+        .circle-shadow:nth-child(6) {
+            right: 29%;
+            animation-delay: 400ms;
+        }
+
+        @keyframes crc {
+            0% {
+                transform: translateY(0);
+                transform: scaleX(1.2);
+                border-radius: 45% 45% 45% 45%;
+            }
+
+            100% {
+                transform: translateY(-30px);
+            }
+        }
+
+        @keyframes shadow-crc {
+            0% {
+                transform: ;
+            }
+
+            100% {
+                transform: scaleX(5);
+                border-radius: 50% 50% 25% 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="center">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle-shadow"></div>
+            <div class="circle-shadow"></div>
+            <div class="circle-shadow"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

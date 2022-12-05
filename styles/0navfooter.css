@@ -38,17 +38,16 @@
 
 .right-section {
     content: "";
-    width: 100px;
+    width: 200px;
 
     display: flex;
 
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .nav-menu {
     top: 18px;
-    margin-right: 30px;
 }
 
 
