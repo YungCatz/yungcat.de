@@ -1,5 +1,5 @@
 # yungcat.dev
 
-is still work in progress...
-it will resemble me and what i can do and already have done
+is still a work in progress...
 
+The website should end up being something I can show... So people can see who I am and what I can do and have done.
