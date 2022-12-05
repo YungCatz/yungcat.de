@@ -1,0 +1,134 @@
+.name2 {
+    font-size: 2.75rem;
+    position: relative;
+}
+
+.name2:hover::after {
+    width: 70px;
+}
+
+.name2::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    top: 60px;
+    margin-top: -10px;
+    position: absolute;
+    transition: .75s ease-out;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 10px;
+}
+
+.contact>form>div>h2 {
+    color: rgba(255, 255, 255, .5);
+    /**/
+    font-size: 2.5rem;
+}
+
+.name-email {
+    display: grid;
+    grid-template-columns: 490px 490px;
+    column-gap: 10px;
+    width: 1000px;
+}
+
+.contact>form>div>div>div>label,
+.contact>form>div>div>label {
+    color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+.input-name,
+.input-email,
+.input-subject,
+.input-message {
+    border: none;
+    background: rgba(255, 255, 255, .05);
+    caret-color: white;
+    color: white;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: 18px;
+    transition: background .3s;
+}
+
+.input-name,
+.input-email {
+    width: 480px;
+    height: 50px;
+}
+
+.input-subject {
+    width: 980px;
+    height: 50px;
+}
+
+.input-message {
+    width: 980px;
+    height: 100px;
+    min-height: 100px;
+    min-width: 980px;
+    max-width: 980px;
+    max-height: 280px;
+    max-lines: 20;
+
+    padding-top: 2rem;
+}
+
+.submit-btn {
+    width: 1000px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, .5);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+
+.submit-btn:active {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+.input-message:hover,
+.input-name:hover,
+.input-email:hover,
+.input-subject:hover,
+.submit-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background .3s;
+}
+
+.input-message:focus,
+.input-name:focus,
+.input-email:focus,
+.input-subject:focus {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid white;
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+}

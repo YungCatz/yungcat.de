@@ -1,0 +1,184 @@
+.header {
+    width: 100vw;
+    height: 100px;
+
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.left-section {
+    content: "";
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 50px;
+}
+
+.middle-section {
+    content: "";
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    margin-bottom: 14px;
+
+    z-index: 99;
+
+}
+
+.right-section {
+    content: "";
+    width: 100px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    top: 18px;
+    margin-right: 30px;
+}
+
+
+.site-icon {
+    position: absolute;
+    width: 50px;
+    transition: rotate .6s;
+    z-index: 1;
+}
+
+.site-header {
+    color: #384a92;
+    /**/
+    font-size: 18px;
+    margin-left: 20px;
+    position: absolute;
+    top: 7px;
+}
+
+.icon:hover .site-icon {
+    rotate: 360deg;
+    transition: .6s;
+}
+
+.footer {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    filter: drop-shadow(0px -10px 5px var(--bg-color-scnd));
+
+    background-color: transparent;
+}
+
+.hamburger-menu {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.hamburger-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hamburger-btn:active svg {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+.hamburger-btn>svg {
+    position: absolute;
+    transition: rotate .3s;
+}
+
+.nav-menu ul {
+    margin-top: 50px;
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-section>div>a {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.shadow1,
+.shadow2,
+.shadow3,
+.shadow4 {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+    width: .1px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 50px;
+}
+
+#nav1:hover .shadow1 {
+    width: 290px;
+    transition: 1s;
+}
+
+#nav2:hover .shadow2 {
+    width: 410px;
+    transition: 1s;
+}
+
+#nav3:hover .shadow3 {
+    width: 500px;
+    transition: 1s;
+}
+
+#nav4:hover .shadow4 {
+    width: 620px;
+    transition: 1s;
+}
+
+.theme-switch-btn {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background: transparent;
+    border: none;
+}
+
+.icon-switch {
+    position: absolute;
+}

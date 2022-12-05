@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-color-main: #36393f;
+    --bg-color-scnd: #342025;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    background-color: var(--bg-color-main);
+}

@@ -1,0 +1,89 @@
+.forjumping {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    margin-bottom: 300px;
+}
+
+.title {
+    height: calc(100vh*.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+}
+
+.title>h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.name {
+    font-size: 3.5rem;
+    position: relative;
+}
+
+.name:hover::after {
+    width: 206px;
+}
+
+.name::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 5px;
+    background: white;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    top: 70px;
+    margin-top: -10px;
+    position: absolute;
+    transition: 1s ease-out;
+}
+
+.title>p {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.title>ul>li>a>svg {
+    fill: white;
+}
+
+.title>ul>li {
+    margin-right: 10px;
+}
+
+.title ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 18px;
+}
+
+.about-me {
+    margin-top: 800px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    margin-top: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
