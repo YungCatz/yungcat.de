@@ -144,10 +144,13 @@
     bottom: 0;
     width: .1px;
     height: 60px;
-    background-color: rgba(0, 0, 0, .1);
+    /*background-color: rgba(0, 0, 0, .1);*/
+    background-color: rgba(255, 255, 255, .1);
     z-index: -1;
     transition: 1s;
     border-radius: 50px;
+
+    filter: blur(5px);
 }
 
 #nav1:hover .shadow1 {
@@ -170,14 +173,52 @@
     transition: 1s;
 }
 
-.theme-switch-btn {
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    background: transparent;
-    border: none;
+.theme-switch {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
 }
 
-.icon-switch {
+.theme-switch input {
     position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    right: 0;
+    opacity: 0;
+    z-index: 5;
+}
+
+.sun-mark,
+.moon-mark {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: none;
+    z-index: 4;
+    top: -6px;
+    right: 0px;
+}
+
+.moon-mark {
+    display: block;
+    transition: display 10s;
+}
+
+.sun-mark {
+    display: none;
+    transition: display 10s;
+}
+
+.theme-switch input:checked~.moon-mark {
+    display: none;
+}
+
+.theme-switch input:checked~.sun-mark {
+    display: block;
 }

@@ -11,6 +11,7 @@
 html {
 
     min-width: 300px;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -58,8 +59,13 @@ a {
 
 .main {
     height: 5800px;
+    transition: backdrop-filter 1s;
     /*backdrop-filter: blur(0px) brightness(.3) grayscale(1);
     */
+}
+
+.footer {
+    transition: backdrop-filter 1s;
 }
 
 @media all and (max-width: 700px) {
