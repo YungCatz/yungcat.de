@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Synthwave x Fluoromachine & epic animations",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.settings.editor": "ui",
+    "liveServer.settings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+    "vscode_custom_css.imports": [
+        "file:///C:/Users/koala/.vscode/extensions/thecodemonkey.synthwave-x-fluoromachine-epic-animations-1.4.13/synthwave-x-fluoromachine.css",
+        "file:///C:/Users/koala/.vscode/extensions/thecodemonkey.synthwave-x-fluoromachine-epic-animations-1.4.13/epic-80s-transitions.css"
+    ]
+}
