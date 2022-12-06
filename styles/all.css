@@ -8,6 +8,15 @@
     scroll-behavior: smooth;
 }
 
+
+#projects {
+    margin-bottom: 180px;
+}
+
+#about-me {
+    margin-bottom: 180px;
+}
+
 html {
 
     min-width: 300px;

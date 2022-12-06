@@ -130,6 +130,12 @@
     font-size: 1.3rem;
     margin-left: 10px;
     margin-right: 20px;
+
+}
+
+.middle-section>div>a:active {
+    font-size: 1.28rem;
+    transition: font-size .1s;
 }
 
 .shadow1,
@@ -199,26 +205,58 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    display: none;
     z-index: 4;
     top: -6px;
     right: 0px;
 }
 
 .moon-mark {
-    display: block;
-    transition: display 10s;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s, transform 1s;
+
+    animation: moon 2s alternate ease;
 }
 
 .sun-mark {
-    display: none;
-    transition: display 10s;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 1s, transform 1s;
+    animation: sun 2s alternate ease;
+}
+
+@keyframes sun {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes moon {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 .theme-switch input:checked~.moon-mark {
-    display: none;
+    opacity: 0;
+    transform: scale(0);
+    animation: moon 2s alternate ease;
 }
 
 .theme-switch input:checked~.sun-mark {
-    display: block;
+    opacity: 1;
+    transform: scale(1);
+    animation: sun 2s alternate ease;
 }

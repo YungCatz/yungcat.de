@@ -12,6 +12,5 @@ function themeswitch() {
         document.head.appendChild(style);
         style.sheet.insertRule('#home {backdrop-filter: brightness(1) grayscale(0)}');
         style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
-
     }
 };

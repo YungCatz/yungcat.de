@@ -9,9 +9,6 @@
     z-index: 10;
 }
 
-#projects {
-    margin-bottom: 180px;
-}
 
 .grid-content {
     width: 1264px;
@@ -76,21 +73,5 @@
 @media (max-width: 1000px) {
     .grid-content {
         grid-template-columns: 300px 300px;
-    }
-
-    #projects {
-        margin-bottom: 150px;
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-content {
-        grid-template-columns: 300px;
-        transition: 1s;
-    }
-
-    .grid-content>div:nth-child(5),
-    .grid-content>div:nth-child(6) {
-        display: none;
     }
 }
