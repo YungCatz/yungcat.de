@@ -1,6 +1,6 @@
 .projects {
     margin-top: 800px;
-    width: auto;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;

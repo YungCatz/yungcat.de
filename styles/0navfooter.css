@@ -86,36 +86,6 @@
     background-color: transparent;
 }
 
-.hamburger-menu {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-}
-
-.hamburger-btn {
-    margin: 0;
-    padding: 0;
-    border: none;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.hamburger-btn:active svg {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-.hamburger-btn>svg {
-    position: absolute;
-    transition: rotate .3s;
-}
 
 .nav-menu ul {
     margin-top: 50px;
@@ -130,7 +100,31 @@
     font-size: 1.3rem;
     margin-left: 10px;
     margin-right: 20px;
+    position: absolute;
 
+    top: 60px;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+}
+
+.nav5 {
+    width: 70px;
+}
+
+.nav6 {
+    left: 250px !important;
+    width: 100px;
+}
+
+.nav7 {
+    left: 380px !important;
+    width: 60px;
+}
+
+.nav8 {
+    left: 470px !important;
+    width: 85px;
 }
 
 .middle-section>div>a:active {
@@ -152,9 +146,9 @@
     height: 60px;
     /*background-color: rgba(0, 0, 0, .1);*/
     background-color: rgba(255, 255, 255, .1);
-    z-index: -1;
     transition: 1s;
     border-radius: 50px;
+    pointer-events: none;
 
     filter: blur(5px);
 }
@@ -187,6 +181,13 @@
     cursor: pointer;
     font-size: 22px;
     user-select: none;
+}
+
+.theme-switch label {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
 }
 
 .theme-switch input {

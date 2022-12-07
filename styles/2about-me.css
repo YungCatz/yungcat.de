@@ -1,0 +1,18 @@
+.about-me {
+    position: absolute;
+    height: 400px;
+}
+
+.about-me h2 {
+    color: white;
+}
+
+.about-me {
+    margin-top: 800px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

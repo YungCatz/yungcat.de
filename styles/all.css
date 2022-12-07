@@ -6,21 +6,73 @@
     color: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    z-index: 1;
 }
 
+.title,
+.projects,
+.about-me,
+.contact {
+    position: absolute;
+    display: inline-block;
 
-#projects {
-    margin-bottom: 180px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
-#about-me {
-    margin-bottom: 180px;
+.title {
+    top: 100px;
+}
+
+.about-me {
+    top: 800px;
+}
+
+.projects {
+    top: 2000px;
+}
+
+.contact {
+    top: 4000px;
+}
+
+.forjumping-about,
+.forjumping-project,
+.forjumping-contact {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.forjumping-about {
+    top: -300px;
+}
+
+.forjumping-project {
+    top: -100px;
+}
+
+.forjumping-contact {
+    top: -200px;
 }
 
 html {
 
     min-width: 300px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
@@ -31,11 +83,26 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 
+
+}
+
+.stars-bg {
+    position: absolute;
+    width: 100%;
+    height: 5800px;
+    filter: opacity(.25) brightness(1);
+    user-select: none;
+
 }
 
 header {
     position: sticky;
     top: 0;
+    z-index: 10;
+}
+
+.header a {
+    z-index: 15;
 }
 
 p {

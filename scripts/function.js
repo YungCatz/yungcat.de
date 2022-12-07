@@ -1,6 +1,26 @@
-function themeswitch() {
-    console.log(document.getElementById("theme").checked)
+const parallax = document.getElementById("bg");
 
+window.addEventListener("scroll", function () {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * .7 + "px";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function themeswitch() {
     if (document.getElementById("theme").checked == false) {
         var style = document.createElement('style');
         document.head.appendChild(style);
@@ -14,3 +34,4 @@ function themeswitch() {
         style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
     }
 };
+

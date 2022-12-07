@@ -1,12 +1,3 @@
-.forjumping {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: transparent;
-    margin-bottom: 300px;
-}
-
-
 .title {
     height: calc(100vh*.7);
     display: flex;
@@ -25,10 +16,12 @@
 .name {
     font-size: 3.5rem;
     position: relative;
+    z-index: 0;
 }
 
 .name:hover::after {
     width: 206px;
+    z-index: 0;
 }
 
 .name::after {
@@ -68,16 +61,6 @@
     justify-content: center;
 
     margin-left: 18px;
-}
-
-.about-me {
-    margin-top: 800px;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact {

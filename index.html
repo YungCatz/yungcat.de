@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html id="bg" lang="en" style="background: url(cdn/images/bgtry2.webp);"">
+<html id="bg" lang="en" style="background: url(cdn/images/bgtry3.webp);"">
 
 <head>
     <meta charset=" UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" type="text/css" href="styles/all.css">
 <link rel="stylesheet" type="text/css" href="styles/main-styles.css">
 <link rel="stylesheet" type="text/css" href="styles/0navfooter.css">
@@ -18,12 +18,21 @@
 </head>
 
 <body style="min-zoom: .75; max-zoom: 1.5;">
-    <main class="main" id="home">
+    <div id="stars" class="stars-bg" style="background: url(cdn/images/sta2rs.png) 0px;"></div>
+    <script>
+
+        const stars = document.getElementById("stars");
+        window.addEventListener("scroll", function () {
+            let offset = window.pageYOffset;
+            stars.style.backgroundPositionY = offset * .5 + "px";
+        })
+    </script>
+    <main class=" main" id="home">
         <header>
             <div class="header">
                 <div class="left-section">
                     <div class="icon">
-                        <a href="index.html">
+                        <a href="index.html" aria-label="Site">
                             <img src="cdn/icons/Skull.svg" alt="" class="site-icon">
                         </a>
                     </div>
@@ -31,30 +40,31 @@
                 <div class="middle-section">
                     <div id="nav1">
                         <div class="shadow1"></div>
-                        <a class="nav5" href="#home">/Home</a>
+                        <a class="nav5" href="#home" aria-label="Jump to Home">/Home</a>
                     </div>
                     <div id="nav2">
                         <div class="shadow2"></div>
-                        <a class="nav5" href="#about-me">/About Me</a>
+                        <a class="nav6" href="#about-me" aria-label="Jump to About-Me">/About Me</a>
                     </div>
                     <div id="nav3">
                         <div class="shadow3"></div>
-                        <a class="nav5" href="#projects">/Work</a>
+                        <a class="nav7" href="#projects" aria-label="Jump to Projects">/Work</a>
                     </div>
                     <div id="nav4">
                         <div class="shadow4"></div>
-                        <a class="nav5" href="#contact">/Contact</a>
+                        <a class="nav8" href="#contact" aria-label="Jump to Contact">/Contact</a>
                     </div>
                 </div>
                 <div class="right-section">
                     <div class="nav-menu">
                         <ul>
                             <li class="language-switch" style="display: block; transform: none;">
-                                <a href="/de/">DE</a>
+                                <a href="/de/" aria-label="Change Website Language to German">DE</a>
                             </li>
 
                             <li class="theme-switch">
-                                <input id="theme" type="checkbox" unchecked oninput="themeswitch()">
+                                <input id="theme" type="checkbox" checked oninput="themeswitch()">
+                                <label for="theme">weewo</label>
 
                                 <svg class="sun-mark" width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -98,20 +108,6 @@
                                 </svg>
 
                             </li>
-
-                            <li class="hamburger-menu">
-                                <button class="hamburger-btn">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 16H27" stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M5 8H27" stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M5 24H27" stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </li>
                         </ul>
                         <div>
 
@@ -128,7 +124,7 @@
                     <p>I'm a Self-Learning Frontend Developer</p>
                     <ul>
                         <li>
-                            <a href="https://github.com/yungcatz">
+                            <a href="https://github.com/yungcatz" aria-label="My Github">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                                     <title>Github</title>
                                     <path
@@ -137,7 +133,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" aria-label="My Discord">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 22">
                                     <title>Discord</title>
                                     <path
@@ -146,7 +142,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" aria-label="My Twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                                     <title>Twitter</title>
                                     <path
@@ -157,7 +153,7 @@
                     </ul>
                 </div>
                 <div class="about-me">
-                    <div id="about-me" class="forjumping"></div>
+                    <div id="about-me" class="forjumping-about"></div>
                     <h1>About Me</h1>
                     <p>My Name is Andreas. My online nickname is YungCat</p>
                     <p>September of 2022 I started to teach myself</p>
@@ -171,7 +167,7 @@
                     <p>a chance. Feel free to <a href="#contact">contact</a> me</p>
                 </div>
                 <div class="projects">
-                    <div id="projects" class="forjumping"></div>
+                    <div id="projects" class="forjumping-project"></div>
 
                     <div class="grid-content">
                         <div>
@@ -235,12 +231,13 @@
                             </div>
                         </div>
                     </div>
-                    <a href="projects/projects.html" class="more-projects">-> See more Projects</a>
+                    <a href="projects/projects.html" class="more-projects" aria-label="-> See more Projects of mine">->
+                        See more Projects</a>
                 </div>
-                <div class="contact" id="contact">
+                <div class="contact">
+                    <div id="contact" class="forjumping-contact"></div>
                     <form action="https://formsubmit.co/6519d7852c166039fe568bce35364462" method="POST" />
                     <div class="contact-form">
-                        <div class="forjumping"></div>
                         <h2>Contact <span class="name2">Me!</span></h2>
                         <input type="hidden" name="_subject" value="New Email wooo">
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact/thank-you.html">
@@ -248,20 +245,20 @@
                         <input type="hidden" name="_captcha" value="false">
                         <div class="name-email">
                             <div class="name-field">
-                                <label for="name" class="label-name">name</label>
+                                <label for="input-name" class="label-name">name</label>
                                 <input name="name" id="input-name" class="input-name" type="text" required>
                             </div>
                             <div class="email-field">
-                                <label for="email" class="label-email">email</label>
+                                <label for="input-email" class="label-email">email</label>
                                 <input name="email" id="input-email" class="input-email" type="email" required>
                             </div>
                         </div>
                         <div class="subject-field">
-                            <label for="subject" class="label-subject">subject</label>
+                            <label for="input-subject" class="label-subject">subject</label>
                             <input name="subject" id="input-subject" class="input-subject" type="text" required>
                         </div>
                         <div class="message-field">
-                            <label for="message" class="label-message">message</label>
+                            <label for="input-message" class="label-message">message</label>
                             <!--<input id="input-message" class="input-message" type="text">-->
                             <textarea name="message" class="input-message" name="message" id="input-message" cols="30"
                                 rows="10" required></textarea>
@@ -282,6 +279,7 @@
             <div></div>
         </div>
     </footer>
+
 </body>
 
 </html>
