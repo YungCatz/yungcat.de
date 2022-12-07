@@ -54,6 +54,16 @@
     transform: scale(1.05);
 }
 
+.grid-content>div:nth-child(1):hover .circle,
+.grid-content>div:nth-child(2):hover .circle,
+.grid-content>div:nth-child(3):hover .circle,
+.grid-content>div:nth-child(4):hover .circle,
+.grid-content>div:nth-child(5):hover .circle,
+.grid-content>div:nth-child(6):hover .circle {
+    background: rgba(255, 255, 255, .3);
+    transform: scale(1.05);
+}
+
 .more-projects {
     width: 1240px;
     text-align: left;
