@@ -17,6 +17,13 @@
 <script src="scripts/function.js"></script>
 </head>
 
+
+
+<!--STYLE THE ABOUT ME SECTION-->
+
+
+
+
 <body style="min-zoom: .75; max-zoom: 1.5;">
     <div id="stars" class="stars-bg" style="background: url(cdn/images/sta2rs.png) 0px;"></div>
     <script>
@@ -64,7 +71,7 @@
 
                             <li class="theme-switch">
                                 <input id="theme" type="checkbox" checked oninput="themeswitch()">
-                                <label for="theme">weewo</label>
+                                <label for="theme">.</label>
 
                                 <svg class="sun-mark" width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -154,23 +161,41 @@
                 </div>
                 <div class="about-me">
                     <div id="about-me" class="forjumping-about"></div>
-                    <h1>About Me</h1>
-                    <p>My Name is Andreas. My online nickname is YungCat</p>
-                    <p>September of 2022 I started to teach myself</p>
-                    <p>How to use HTML, CSS, "JS" and also Java</p>
-                    <p>with the use of YouTube Courses and finding stuff out for myself </p>
-                    <h2>What are my Goals in the Future?</h2>`
-                    <p>I wanna learn more and be fluent with the Tools im using</p>
-                    <p>Also I am searching for a apprenticeship in the department</p>
-                    <p>Computer Science Software Developer</p>
-                    <p>If you are a company that wants to hire me and give me</p>
-                    <p>a chance. Feel free to <a href="#contact">contact</a> me</p>
+                    <div class="about-me-header">
+                        <h1>About Me</h1>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.7499 7.67493C11.451 7.10358 11.3844 6.43884 11.5641 5.81957C11.7437 5.2003 12.1557 4.67439 12.714 4.3517C13.2722 4.02901 13.9336 3.9345 14.5599 4.0879C15.1862 4.24131 15.729 4.63077 16.0749 5.17493L19.8249 11.6624"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M8.42493 11.8999L6.42493 8.43738C6.12605 7.86603 6.05948 7.20129 6.23914 6.58202C6.41879 5.96275 6.83078 5.43684 7.38903 5.11415C7.94728 4.79146 8.60863 4.69695 9.23492 4.85035C9.86121 5.00376 10.404 5.39322 10.7499 5.93738L14.9999 13.2999"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M19.2501 20.6624C18.9207 20.0947 18.7067 19.4676 18.6201 18.817C18.5336 18.1664 18.5763 17.5051 18.7459 16.871C18.9154 16.237 19.2084 15.6426 19.6081 15.1221C20.0078 14.6015 20.5064 14.1649 21.0751 13.8374L19.8251 11.6624C19.4936 11.0872 19.4041 10.4039 19.5764 9.76273C19.7487 9.12159 20.1687 8.57515 20.7439 8.24363C21.3191 7.91211 22.0024 7.82266 22.6435 7.99496C23.2847 8.16726 23.8311 8.58719 24.1626 9.16238L26.6626 13.4999C27.9887 15.7973 28.3478 18.5274 27.661 21.0897C26.9741 23.6519 25.2976 25.8363 23.0001 27.1624C20.7027 28.4885 17.9726 28.8476 15.4103 28.1607C12.8481 27.4739 10.6637 25.7973 9.33762 23.4999L4.08762 14.3999C3.92346 14.1151 3.81702 13.8007 3.77435 13.4748C3.73168 13.1488 3.75363 12.8177 3.83895 12.5002C4.01125 11.8591 4.43118 11.3126 5.00637 10.9811C5.58156 10.6496 6.26488 10.5602 6.90602 10.7325C7.54716 10.9048 8.0936 11.3247 8.42512 11.8999L11.1751 16.6624"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.1375 30C8.43899 28.8285 7.02507 27.2907 6 25.5" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22 3.87502C23.141 3.87193 24.2626 4.17101 25.2506 4.74185C26.2386 5.31269 27.0578 6.13494 27.625 7.12502"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p>My Name is <span class="name3">Andreas</span>. My online nickname is <span
+                            class="name3">YungCat</span></p>
+                    <p>In September of 2022 I started to teach myself</p>
+                    <p>How to use <span class="fett">HTML, CSS, JS </span> and also <span class="fett">Java</span></p>
+                    <p>with the use of YouTube Courses and a many attempts of trying code</p>
+                    <p>I want to learn to be more fluent with the Tools i use</p>
+                    <p>I am also looking for a apprenticeship in the department of</p>
+                    <p><span class="fett">Computer Science Software Developer</span></p>
+                    <p class="weewo">Feel free to <a href="#contact">Contact</a> me
+                        and have a look at the <a href="#projects">Projects</a> I have done</p>
                 </div>
                 <div class="projects">
                     <div id="projects" class="forjumping-project"></div>
 
                     <div class="grid-content">
-                        <div>
+                        <div class="project1" id="projec1">
                             <div class="loader">
                                 <div class="circle"></div>
                                 <div class="circle"></div>
@@ -180,7 +205,7 @@
                                 <div class="circle-shadow"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="project2">
                             <div class="loader">
                                 <div class="circle"></div>
                                 <div class="circle"></div>
@@ -190,7 +215,7 @@
                                 <div class="circle-shadow"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="project3">
                             <div class="loader">
                                 <div class="circle"></div>
                                 <div class="circle"></div>
@@ -200,7 +225,7 @@
                                 <div class="circle-shadow"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="project4">
                             <div class="loader">
                                 <div class="circle"></div>
                                 <div class="circle"></div>
@@ -210,7 +235,7 @@
                                 <div class="circle-shadow"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="project5">
                             <div class="loader">
                                 <div class="circle"></div>
                                 <div class="circle"></div>
@@ -220,7 +245,7 @@
                                 <div class="circle-shadow"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="project6">
                             <div class="loader">
                                 <div class="circle"></div>
                                 <div class="circle"></div>

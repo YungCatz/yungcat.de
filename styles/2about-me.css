@@ -1,3 +1,30 @@
+.name3 {
+    font-size: 1.3rem;
+    position: relative;
+    text-shadow: 0px 0px 5px 2px rgba(255, 255, 255, .5);
+    font-weight: bold;
+}
+
+.name3:hover::after {
+    width: 80px;
+}
+
+.name3::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: rgba(255, 255, 255, .5);
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    top: 32px;
+    margin-top: -10px;
+    position: absolute;
+    transition: .75s ease-out;
+}
+
+
 .about-me {
     position: absolute;
     height: 400px;
@@ -15,4 +42,62 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.about-me svg {
+    position: absolute;
+
+    top: 20px;
+    left: 190px;
+    bottom: 0;
+    right: 0;
+    scale: 1.2;
+
+    transform-origin: 100% 100%;
+    rotate: 45deg;
+    animation: wave 1s alternate ease infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.about-me-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+}
+
+.about-me-header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.about-me p {
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+.about-me a {
+    text-decoration: underline;
+}
+
+.weewo {
+    font-size: 1.3rem !important;
+}
+
+.fett {
+    font-weight: bold !important;
 }

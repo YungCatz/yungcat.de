@@ -26,12 +26,14 @@ function themeswitch() {
         document.head.appendChild(style);
         style.sheet.insertRule('#home {backdrop-filter: brightness(.3) grayscale(1)}');
         style.sheet.insertRule('#footer {backdrop-filter: brightness(.3) grayscale(1)}');
+        style.sheet.insertRule('#projec1 {background: url(../cdn/images/project-1-dark.webp}');
 
     } else {
         var style = document.createElement('style');
         document.head.appendChild(style);
         style.sheet.insertRule('#home {backdrop-filter: brightness(1) grayscale(0)}');
         style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
+        style.sheet.insertRule('#projec1 {background: url(../cdn/images/project-1.webp}');
     }
 };
 
