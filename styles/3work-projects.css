@@ -1,7 +1,7 @@
 .projects {
     margin-top: 800px;
     height: 800px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,10 +38,13 @@
     border-radius: 13px;
     padding: 6px;
 
+    z-index: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: inherit;
 }
 
 .grid-content>div:nth-child(1):hover,
@@ -70,14 +73,25 @@
     float: left;
     padding-top: 10px;
 
-    color: rgba(255, 255, 255, .5);
-    font-size: 1rem;
+    color: rgba(255, 255, 255, .3);
+    font-size: 1.8rem;
     transition: text-shadow 1s;
+    animation: glow 1s infinite alternate ease;
 }
 
 .more-projects:hover {
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, .5);
+    font-size: 1.85rem;
 
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, .1);
+    }
+
+    100% {
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, .5);
+    }
 }
 
 @media (max-width: 1000px) {
