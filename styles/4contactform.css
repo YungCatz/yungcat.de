@@ -8,7 +8,7 @@
 }
 
 .name2:hover::after {
-    width: 70px;
+    width: 110px;
 }
 
 .name2::after {

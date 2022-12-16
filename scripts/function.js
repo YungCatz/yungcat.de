@@ -26,14 +26,30 @@ function themeswitch() {
         document.head.appendChild(style);
         style.sheet.insertRule('#home {backdrop-filter: brightness(.3) grayscale(1)}');
         style.sheet.insertRule('#footer {backdrop-filter: brightness(.3) grayscale(1)}');
-        style.sheet.insertRule('#projec1 {background: url(../cdn/images/project-1-dark.webp}');
+        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
 
     } else {
         var style = document.createElement('style');
         document.head.appendChild(style);
         style.sheet.insertRule('#home {backdrop-filter: brightness(1) grayscale(0)}');
         style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
-        style.sheet.insertRule('#projec1 {background: url(../cdn/images/project-1.webp}');
+        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
+    }
+};
+function themeswitchproj() {
+    if (document.getElementById("theme-proj").checked == false) {
+        var style = document.createElement('style');
+        document.head.appendChild(style);
+        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
+        style.sheet.insertRule('#footer {backdrop-filter: brightness(.3) grayscale(1)}');
+        style.sheet.insertRule('#proj-imgdark {filter: brightness(.3) grayscale(1)}');
+
+    } else {
+        var style = document.createElement('style');
+        document.head.appendChild(style);
+        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(1) grayscale(0)}');
+        style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
+        style.sheet.insertRule('#proj-imgdark {filter: brightness(1) grayscale(0)}');
     }
 };
 

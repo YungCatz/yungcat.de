@@ -173,6 +173,26 @@
     transition: 1s;
 }
 
+#nav5:hover .shadow1 {
+    width: 290px;
+    transition: 1s;
+}
+
+#nav6:hover .shadow2 {
+    width: 430px;
+    transition: 1s;
+}
+
+#nav7:hover .shadow3 {
+    width: 540px;
+    transition: 1s;
+}
+
+#nav8:hover .shadow4 {
+    width: 650px;
+    transition: 1s;
+}
+
 .theme-switch {
     position: relative;
     display: block;

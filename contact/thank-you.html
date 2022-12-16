@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html lang="en" style="background: url(../../cdn/images/bgtry2.webp); background-repeat: no-repeat;">
+<html id="bg" lang="en" style="background: url(../cdn/images/bgtry3.webp);"">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/all.css">
-    <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
-    <link rel="stylesheet" type="text/css" href="../styles/0navfooter.css">
-    <link rel="stylesheet" type="text/css" href="../styles/1content.css">
-    <link rel="stylesheet" type="text/css" href="../styles/4contactform.css">
-    <link rel="stylesheet" type="text/css" href="../styles/3work-projects.css">
-    <link rel="stylesheet" type="text/css" href="../styles/2about-me.css">
-    <title>Thank You</title>
+    <meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" media="(prefers-color-sheme: dark)" content="#35363a">
+<link rel="icon" type="image/x-icon" href="../cdn/icons/Skull.svg">
+<link rel="stylesheet" type="text/css" href="../styles/all.css">
+<link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
+<link rel="stylesheet" type="text/css" href="../styles/0navfooter.css">
+<link rel="stylesheet" type="text/css" href="../styles/1content.css">
+<link rel="stylesheet" type="text/css" href="../styles/4contactform.css">
+<link rel="stylesheet" type="text/css" href="../styles/3work-projects.css">
+<link rel="stylesheet" type="text/css" href="../styles/2about-me.css">
+<link rel="stylesheet" type="text/css" href="../styles/loader.css">
+<title>Thank You</title>
+<script src="../scripts/function.js"></script>
 </head>
 
-<style>
-    .main {
-        height: 900px;
-    }
-</style>
-
-<body scroll="no">
-    <main class="main" id="home">
+<body style="overflow: hidden;">
+    <div id="stars" class="stars-bg" style="background: url(../cdn/images/sta2rs.png) 0px;"></div>
+    <main class=" main" id="home">
         <header>
             <div class="header">
                 <div class="left-section">
                     <div class="icon">
-                        <a href="index.html">
+                        <a href="../" aria-label="Site">
                             <img src="../cdn/icons/Skull.svg" alt="" class="site-icon">
                         </a>
                     </div>
                 </div>
                 <div class="middle-section">
-                    <div id="nav1">
-                        <div class="shadow1"></div>
-                        <a class="nav5" href="../#home">/Home</a>
-                    </div>
-                    <div id="nav2">
-                        <div class="shadow2"></div>
-                        <a class="nav5" href="../#about-me">/About Me</a>
-                    </div>
-                    <div id="nav3">
-                        <div class="shadow3"></div>
-                        <a class="nav5" href="../#projects">/Work</a>
-                    </div>
-                    <div id="nav4">
-                        <div class="shadow4"></div>
-                        <a class="nav5" href="../#contact">/Contact</a>
-                    </div>
                 </div>
                 <div class="right-section">
                     <div class="nav-menu">
                         <ul>
-                            <li class="language-switch" style="display: block; transform: none;">
-                                <a href="/de/">DE</a>
-                            </li>
-                            <li class="theme-switch" style="display: block; transform: none;">
-                                <input class="theme-switch-btn" type="checkbox">
-                                <svg id="icon-switch" src="cdn/icons/sun.svg" class="icon-switch"></svg>
-                                </input>
+                            <li class="theme-switch">
+                                <input id="theme" type="checkbox" checked oninput="themeswitch()">
+                                <label for="theme">.</label>
+
+                                <svg class="sun-mark" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 23.5C20.1421 23.5 23.5 20.1421 23.5 16C23.5 11.8579 20.1421 8.5 16 8.5C11.8579 8.5 8.5 11.8579 8.5 16C8.5 20.1421 11.8579 23.5 16 23.5Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 4.5V2" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.8626 7.8626L6.1001 6.1001" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4.5 16H2" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.8626 24.1375L6.1001 25.9" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16 27.5V30" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M24.1375 24.1375L25.9 25.9" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.5 16H30" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M24.1375 7.8626L25.9 6.1001" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                                <svg class="moon-mark" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 14V8" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M30 11H24" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21 3V7" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M23 5H19" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M27.0874 19.0751C25.1241 19.6257 23.0496 19.6437 21.077 19.1274C19.1043 18.611 17.3047 17.579 15.8629 16.1371C14.421 14.6953 13.389 12.8957 12.8726 10.923C12.3563 8.95043 12.3744 6.87593 12.9249 4.9126C10.9892 5.45136 9.2285 6.48787 7.81809 7.91889C6.40767 9.3499 5.39679 11.1255 4.88614 13.0688C4.3755 15.012 4.3829 17.0552 4.90762 18.9947C5.43234 20.9342 6.45606 22.7024 7.87682 24.1232C9.29757 25.5439 11.0658 26.5677 13.0053 27.0924C14.9448 27.6171 16.988 27.6245 18.9312 27.1139C20.8745 26.6032 22.6501 25.5923 24.0811 24.1819C25.5121 22.7715 26.5486 21.0108 27.0874 19.0751V19.0751Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
                             </li>
                         </ul>
                         <div>
@@ -69,16 +90,13 @@
                 </div>
             </div>
         </header>
-
         <div class="center">
             <div class="content">
                 <div class="title">
-                    <h1>Thank You!</h1>
-                    <p>I'll get back to you as quickly as possible</p>
+                    <h1>Thank You!
+                    </h1>
+                    <p>I will get back to you as soon as possible.</p>
                 </div>
-            </div>
-        </div>
-    </main>
 </body>
 
 </html>
