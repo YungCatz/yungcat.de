@@ -101,7 +101,7 @@ html {
 }
 
 .proj-top-name1:hover::after {
-    width: 176px;
+    width: 160px;
     z-index: 0;
 }
 
@@ -127,7 +127,7 @@ html {
 }
 
 .proj-under-name:hover::after {
-    width: 120px;
+    width: 110px;
     z-index: 0;
 }
 

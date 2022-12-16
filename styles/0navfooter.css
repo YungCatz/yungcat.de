@@ -270,6 +270,37 @@
     }
 }
 
+.language-switch {
+    position: relative;
+}
+
+.language-selected {
+    transition: transform 1s;
+    transform: scale(1);
+}
+
+.hoverde {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    pointer-events: none;
+    transform: scale(0);
+    transition: transform 1s;
+}
+
+.language-switch:hover .hoverde {
+    transform: scale(1);
+}
+
+.language-switch:hover .language-selected {
+    transform: scale(0);
+}
+
 .theme-switch input:checked~.moon-mark {
     opacity: 0;
     transform: scale(0);
