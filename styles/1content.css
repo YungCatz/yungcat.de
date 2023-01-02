@@ -1,22 +1,21 @@
 .title {
-    height: calc(100vh*.7);
+    margin-top: 20rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 100vw;
 }
 
 .title>h1 {
     margin-bottom: 10px;
-    font-size: 3rem;
+    font-size: clamp(.1rem, .6rem + 5vw, 3rem);
 }
 
 .name {
-    font-size: 3.5rem;
-    position: relative;
+    font-size: clamp(0px, 5rem + 100vw, 3.5rem);
     z-index: 0;
+    position: relative;
 }
 
 .name:hover::after {
@@ -41,7 +40,7 @@
 
 .title>p {
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, .6rem + 10vw, 1.5rem);
 }
 
 .title>ul>li>a>svg {
@@ -65,7 +64,6 @@
 
 .contact {
     margin-top: 800px;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

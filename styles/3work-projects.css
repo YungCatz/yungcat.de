@@ -66,15 +66,18 @@
 }
 
 .more-projects {
-    width: 1240px;
-    text-align: left;
-    float: left;
-    padding-top: 10px;
-
     color: rgba(255, 255, 255, .3);
     font-size: 1.8rem;
     transition: text-shadow 1s;
     animation: glow 1s infinite alternate ease;
+
+    max-width: 18rem;
+    max-height: 3rem;
+
+    top: 20px;
+    flex: 1;
+
+    position: relative;
 }
 
 .more-projects:hover {
@@ -89,11 +92,5 @@
 
     100% {
         text-shadow: 2px 2px 5px rgba(255, 255, 255, .5);
-    }
-}
-
-@media (max-width: 1000px) {
-    .grid-content {
-        grid-template-columns: 300px 300px;
     }
 }
