@@ -26,6 +26,30 @@
     transition: .75s ease-out;
 }
 
+.name6 {
+    font-size: 2.75rem;
+    position: relative;
+}
+
+.name6:hover::after {
+    width: 74px;
+}
+
+.name6::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    top: 60px;
+    margin-top: -10px;
+    position: absolute;
+    transition: .75s ease-out;
+}
+
 .contact-form {
     display: grid;
     row-gap: 10px;

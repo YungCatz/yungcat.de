@@ -9,17 +9,6 @@ window.addEventListener("scroll", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 function themeswitch() {
     if (document.getElementById("theme").checked == false) {
         var style = document.createElement('style');
@@ -52,4 +41,3 @@ function themeswitchproj() {
         style.sheet.insertRule('#proj-imgdark {filter: brightness(1) grayscale(0)}');
     }
 };
-
