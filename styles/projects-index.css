@@ -119,7 +119,7 @@ html {
 }
 
 .proj-under-name {
-    font-size: clamp(0px, .5rem + 5vw, 1.4rem);
+    font-size: clamp(0.1px, 1rem + 5vw, 1.4rem);
     position: relative;
     z-index: 0;
 }
