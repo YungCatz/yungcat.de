@@ -27,11 +27,11 @@
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-    border: 1px solid teal;
 
 }
 
-.title {
+.title,
+.title-thank {
     top: 100px;
 }
 
@@ -182,4 +182,30 @@ a {
         grid-template-columns: 400px !important;
         width: 400px !important;
     }
+}
+
+@media all and (max-width: 400px) {
+    /*GalaFOLD*/
+
+    .grid-content {
+        transform: scale(.75);
+    }
+
+    .more-projects {
+        transform: translateY(-160px);
+    }
+
+    .contact {
+        transform: scale(.80);
+    }
+
+    .about-me {
+        transform: scale(.9);
+    }
+
+
+}
+
+@media all and (max-height: 600px) {
+    .title-thank {}
 }

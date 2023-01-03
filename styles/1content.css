@@ -1,5 +1,6 @@
-.title {
-    margin-top: 20rem;
+.title,
+.title-thank {
+    margin-top: calc(100vh/4);
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -7,13 +8,14 @@
     align-items: center;
 }
 
-.title>h1 {
+.title>h1,
+.title-thank>h1 {
     margin-bottom: 10px;
     font-size: clamp(.1rem, .6rem + 5vw, 3rem);
 }
 
 .name {
-    font-size: clamp(0px, 5rem + 100vw, 3.5rem);
+    font-size: clamp(.1px, 1rem + 5vw, 3.5rem);
     z-index: 0;
     position: relative;
 }
@@ -38,9 +40,10 @@
     transition: 1s ease-out;
 }
 
-.title>p {
+.title>p,
+.title-thank>p {
     margin-bottom: 15px;
-    font-size: clamp(1rem, .6rem + 10vw, 1.5rem);
+    font-size: clamp(.1rem, .6rem + 5vw, 1.5rem);
 }
 
 .title>ul>li>a>svg {
