@@ -182,6 +182,11 @@ a {
         grid-template-columns: 400px !important;
         width: 400px !important;
     }
+
+    .about-me svg {
+        left: 175px !important;
+        top: 15px !important;
+    }
 }
 
 @media all and (max-width: 400px) {
@@ -201,6 +206,11 @@ a {
 
     .about-me {
         transform: scale(.9);
+    }
+
+    .about-me svg {
+        left: 170px !important;
+        top: 15px !important;
     }
 }
 
