@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="../styles/2about-me.css">
     <link rel="stylesheet" type="text/css" href="../styles/loader.css">
     <title>YungCat</title>
-    <script src="../scripts/function.js"></script>
 
     <style>
         @media all and (max-width: 900px) {
@@ -29,14 +28,6 @@
 
 <body style="min-zoom: .75; max-zoom: 1.5;">
     <div id="stars" class="stars-bg" style="background: url(../cdn/images/sta3rs.webp) 0px;"></div>
-    <script>
-
-        const stars = document.getElementById("stars");
-        window.addEventListener("scroll", function () {
-            let offset = window.pageYOffset;
-            stars.style.backgroundPositionY = offset * .5 + "px";
-        })
-    </script>
     <main class=" main" id="home">
         <header>
             <div class="header">
@@ -314,7 +305,7 @@
             <div></div>
             <div style="position: relative">
                 <p style="color: rgba(255, 255, 255, .4);">yungcat.de &#169; 2023 ALL RIGHTS RESERVED.</p>
-                </p><a href="legal-notice/"
+                </p><a href="../legal-notice/"
                     style="animation: glow 1s infinite alternate ease; position: absolute; left: 110px; color: rgba(255, 255, 255, .4); padding-bottom: 10px;">Legal
                     Notice</a>
                 <p>
@@ -323,6 +314,7 @@
             <div></div>
         </div>
     </footer>
+    <script src="../scripts/function.js"></script>
 
 </body>
 

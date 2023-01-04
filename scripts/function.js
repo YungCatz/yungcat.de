@@ -7,37 +7,23 @@ window.addEventListener("scroll", function (event) {
     stars.style.backgroundPositionY = offset * .5 + "px";
 })
 
-
+const themeStyle = document.createElement('style');
+document.head.appendChild(themeStyle);
 
 function themeswitch() {
-    if (document.getElementById("theme").checked == false) {
-        var style = document.createElement('style');
-        document.head.appendChild(style);
-        style.sheet.insertRule('#home {backdrop-filter: brightness(.3) grayscale(1)}');
-        style.sheet.insertRule('#footer {backdrop-filter: brightness(.3) grayscale(1)}');
-        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
-
-    } else {
-        var style = document.createElement('style');
-        document.head.appendChild(style);
-        style.sheet.insertRule('#home {backdrop-filter: brightness(1) grayscale(0)}');
-        style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
-        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
+    while (themeStyle.sheet.cssRules.length > 0) {
+        themeStyle.sheet.deleteRule(0);
     }
-};
-function themeswitchproj() {
-    if (document.getElementById("theme-proj").checked == false) {
-        var style = document.createElement('style');
-        document.head.appendChild(style);
-        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
-        style.sheet.insertRule('#footer {backdrop-filter: brightness(.3) grayscale(1)}');
-        style.sheet.insertRule('#proj-imgdark {filter: brightness(.3) grayscale(1)}');
+    if (document.getElementById("theme").checked == false) {
+        themeStyle.sheet.insertRule('#home {backdrop-filter: brightness(.3) grayscale(1)}');
+        themeStyle.sheet.insertRule('#footer {backdrop-filter: brightness(.3) grayscale(1)}');
+        themeStyle.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
+        themeStyle.sheet.insertRule('#proj-imgdark {filter: brightness(.3) grayscale(1)}');
 
     } else {
-        var style = document.createElement('style');
-        document.head.appendChild(style);
-        style.sheet.insertRule('#home-proj {backdrop-filter: brightness(1) grayscale(0)}');
-        style.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
-        style.sheet.insertRule('#proj-imgdark {filter: brightness(1) grayscale(0)}');
+        themeStyle.sheet.insertRule('#home {backdrop-filter: brightness(1) grayscale(0)}');
+        themeStyle.sheet.insertRule('#footer {backdrop-filter: brightness(1) grayscale(0)}');
+        themeStyle.sheet.insertRule('#home-proj {backdrop-filter: brightness(.3) grayscale(1)}');
+        themeStyle.sheet.insertRule('#proj-imgdark {filter: brightness(1) grayscale(0)}');
     }
 };
