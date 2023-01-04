@@ -1,4 +1,4 @@
-# yungcat.dev
+# yungcat.de
 
 is still a work in progress...
 
