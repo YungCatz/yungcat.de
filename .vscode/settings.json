@@ -12,5 +12,6 @@
         "file:///C:/Users/koala/.vscode/extensions/thecodemonkey.synthwave-x-fluoromachine-epic-animations-1.4.13/synthwave-x-fluoromachine.css",
         "file:///C:/Users/koala/.vscode/extensions/thecodemonkey.synthwave-x-fluoromachine-epic-animations-1.4.13/epic-80s-transitions.css"
     ],
-    "workbench.preferredDarkColorTheme": "Default Dark+"
+    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "liveServer.settings.port": 5501
 }

@@ -1,11 +1,11 @@
 const parallax = document.getElementById("bg");
+const stars = document.getElementById("stars");
 
-window.addEventListener("scroll", function () {
-    let offset = window.pageYOffset;
+window.addEventListener("scroll", function (event) {
+    let offset = event.target.scrollingElement.scrollTop;
     parallax.style.backgroundPositionY = offset * .7 + "px";
+    stars.style.backgroundPositionY = offset * .5 + "px";
 })
-
-
 
 
 

@@ -47,6 +47,12 @@
     position: relative;
 }
 
+.left-section,
+.middle-section,
+.right-section {
+    backdrop-filter: ;
+}
+
 .nav-menu {
     top: 18px;
 }
