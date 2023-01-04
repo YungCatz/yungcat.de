@@ -95,7 +95,7 @@ body {
     position: absolute;
     max-width: 5800px;
     height: 5800px;
-    filter: opacity(.25) brightness(1);
+    filter: opacity(.3) brightness(1);
     user-select: none;
     top: 0;
     left: 0;
