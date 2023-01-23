@@ -189,25 +189,49 @@ a {
         margin-bottom: 50px !important;
     }
 
-    .proj-img1 {
+    .proj-img1,
+    .proj-img2 {
         width: 200px !important;
         bottom: 20px !important;
         right: 20px !important;
     }
 
-    .proj-desc1 {
-        top: 80px !important;
+    .proj-desc1,
+    .proj-desc2 {
+        top: 70px !important;
         text-align: left !important;
+        font-size: 1.27rem !important;
+        width: 550px !important;
     }
 
-    .proj-desc1de {
+    .proj-desc1de,
+    .proj-desc2de {
         top: 70px !important;
         text-align: left !important;
         font-size: 16.5px !important;
+        width: 550px !important;
+        font-size: 1.1rem !important;
+    }
+
+    .proj-desc2de {
+        font-size: 1.2rem !important;
+    }
+
+    .proj-under-name,
+    .proj-under-name2 {
+        font-size: 1.2rem !important;
     }
 
     .proj-top-name1 {
         left: calc(100%/2.7) !important;
+    }
+
+    .proj-top-name2 {
+        left: calc(100%/3.5) !important;
+    }
+
+    .proj-git {
+        font-size: 1.3rem !important;
     }
 
 }
@@ -253,7 +277,8 @@ a {
         margin-bottom: 50px !important;
     }
 
-    .proj-img1 {
+    .proj-img1,
+    .proj-img2 {
         display: none !important;
     }
 
@@ -261,17 +286,43 @@ a {
         left: calc(100%/3) !important;
     }
 
-    .proj-under-name {
+    .proj-top-name2 {
+        left: calc(100%/4) !important;
+    }
+
+    .proj-under-name,
+    .proj-under-name2 {
         font-size: 1.2rem !important;
 
     }
 
     .proj-desc1 {
-        font-size: 1rem !important;
+        top: 60px !important;
+        width: 450px !important;
+        font-size: 1.15rem !important;
+        line-height: 25px !important;
+    }
+
+    .proj-desc2 {
+        top: 70px !important;
+        width: 450px !important;
+        font-size: 1.25rem !important;
+        line-height: 25px !important;
     }
 
     .proj-desc1de {
-        font-size: .85rem !important;
+        top: 50px !important;
+        font-size: 1.15rem !important;
+        width: 450px !important;
+        text-align: center !important;
+    }
+
+
+    .proj-desc2de {
+        top: 70px !important;
+        font-size: 1.25rem !important;
+        width: 450px !important;
+        text-align: center !important;
     }
 
     .proj-git {
@@ -296,38 +347,75 @@ a {
         margin-bottom: 50px !important;
     }
 
-    .proj-img1 {
+    .proj-img1,
+    .proj-img2 {
         display: none !important;
     }
 
-    .proj-top-name1 {
-        left: calc(100%/3.2) !important;
+    .proj-top-name1,
+    .proj-top-name2 {
         font-size: 28px !important;
         top: 5px !important;
     }
 
-    .proj-under-name {
-        font-size: 1.1rem !important;
+    .proj-top-name2 {
+        left: calc(100%/4.5) !important;
+    }
+
+    .proj-under-name,
+    .proj-under-name2 {
+        font-size: 1.25rem !important;
 
     }
 
     .proj-desc1 {
-        top: 50px !important;
-        font-size: .75rem !important;
+        top: 40px !important;
+        font-size: 1.22rem !important;
+        width: 360px !important;
         text-align: center !important;
+
+        line-height: 25px !important;
+        transform: translateX(-8px);
+    }
+
+
+    .proj-desc2 {
+        top: 50px !important;
+        font-size: 1.25rem !important;
+        width: 360px !important;
+        text-align: center !important;
+
+        line-height: 30px !important;
+        transform: translateX(-8px);
     }
 
     .proj-desc1de {
         top: 40px !important;
+        font-size: 1rem !important;
+        width: 360px !important;
         text-align: center !important;
-        font-size: .8rem !important;
 
-        transform: scaleY(.9);
-        transform: translateX(-8px)
+        line-height: 25px !important;
+        transform: translateX(-8px);
+    }
+
+
+    .proj-desc2de {
+        top: 50px !important;
+        font-size: 1.05rem !important;
+        width: 360px !important;
+        text-align: center !important;
+
+        line-height: 25px !important;
+        transform: translateX(-8px);
+    }
+
+    .break {
+        position: absolute;
     }
 
     .proj-git {
-        font-size: 1.1rem !important;
+        font-size: 1.2rem !important;
     }
 
     .break {
