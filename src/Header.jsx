@@ -18,25 +18,26 @@ import {
 import { Icon, IconButton, Link, Switch, Tooltip } from "@mui/material";
 
 function openHomePage() {
-  window.location.href = "./";
+  window.location.href = "./# ";
 }
 
 export default function Header() {
   return (
     <>
-      <div className="water-color-bg">
+      <div className="water-color-bg" id=" ">
         <div className="gradient"></div>
 
         {/*About-me*/}
         <div className="absolute flex flex-col self-center text-center font-roboto">
-          <h1 className="text-4xl leading-9">Hi my name is Andreas</h1>
-          <p>I'm a Self-Learning Frontend Developer</p>
+          <h1 className="text-4xl font-[900] leading-9">Hi my name is Andreas</h1>
+          <p className="text-lg/[40px]">I'm a Self-Learning Frontend Developer</p>
+
         </div>
       </div>
 
       <header>
         {/*Left-Header*/}
-        <div className="ml-4 flex justify-center content-center flex-col ">
+        <div className="ml-4 flex justify-center content-center flex-col">
           <Tooltip title="Home">
             <IconButton
               style={{ color: "white" }}
