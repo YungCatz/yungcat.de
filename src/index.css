@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@400;500;700&display=swap");
+@tailwind base;
+@import "./custom-base-styles.css";
+@tailwind components;
+@import "./custom-components.css";
+@tailwind utilities;
+@import "./custom-utilities.css";
+
+
 
 :root {
   font-family: "Gochi Hand", cursive, Inter, system-ui, Avenir, Helvetica, Arial,
@@ -45,31 +53,13 @@ header {
   backdrop-filter: blur(8px);
 }
 
-.left-header {
-  margin-left: 15px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-}
-
-.middle-header {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-}
-
-.middle-header > h1 {
-  position: relative;
-}
-.middle-header > h1::after {
+.h1-after-anim:after {
   content: "";
   position: absolute;
   width: 120px;
   border-bottom: 3px solid white;
-  bottom: 20px;
-  left: -5px;
+  bottom: 6px;
+  left: 0px;
 
   animation: underline 1s linear 0s infinite forwards;
 }
@@ -93,37 +83,24 @@ header {
   }
 }
 
-.right-header {
-  margin-right: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-  justify-self: end;
-}
-
-.right-header > button,
-.left-header > button {
+.header-buttons {
   width: 50px;
   height: 50px;
   padding: 4px;
 
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1) !important;
   border: none;
-  transition: background-color 0.3s, transform 0.1s;
+  transition: background-color 0.3s;
 }
 
-.right-header > button:hover,
-.left-header > button:hover {
+.header-buttons:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
-.right-header > button:active,
-.left-header > button:active {
-  background-color: rgba(0, 0, 0, 0.3);
-  transform: scale(0.9) translateX(0.05px) translateY(0.05px);
+.header-buttons:active {
+  background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .water-color-bg {
