@@ -30,7 +30,7 @@ export default function Header() {
         {/*About-me*/}
         <div className="absolute flex flex-col self-center text-center font-roboto">
           <h1 className="text-4xl font-[900] leading-9">Hi my name is Andreas</h1>
-          <p className="text-lg/[40px]">I'm a Self-Learning Frontend Developer</p>
+          <p className="text-lg/[40px]">I'm a Self-Learning Software Developer</p>
 
         </div>
       </div>
