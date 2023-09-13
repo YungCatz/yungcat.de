@@ -141,6 +141,12 @@ main {
   height: 2000px;
 }
 
+.grid-item {
+  border: 1px solid white;
+  width: 100px;
+  height: 50px;
+}
+
 
 
 
