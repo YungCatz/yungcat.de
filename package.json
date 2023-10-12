@@ -16,8 +16,10 @@
     "@heroicons/react": "^2.0.18",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
+    "devicon": "^2.15.1",
     "react": "^17.0.0 || ^18.2.0",
-    "react-dom": "^17.0.0 || ^18.2.0"
+    "react-dom": "^17.0.0 || ^18.2.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

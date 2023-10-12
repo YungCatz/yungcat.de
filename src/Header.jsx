@@ -30,7 +30,7 @@ export default function Header() {
         {/*About-me*/}
         <div className="absolute flex flex-col self-center text-center font-roboto">
           <h1 className="text-4xl font-[900] leading-9">Hi my name is Andreas</h1>
-          <p className="text-lg/[40px]">I'm a Self-Learning Software Developer</p>
+          <p className="text-lg/[40px]">I'm a <span className="line-through mr-1">Self</span>-Learning Software Developer</p>
 
         </div>
       </div>
@@ -65,9 +65,6 @@ export default function Header() {
               >
               <DarkModeOutlined fontSize="inherit" />
             </IconButton>
-              {/* 
-            <Switch defaultChecked color="error"/>
-            */}
           </Tooltip>
         </div>
       </header>

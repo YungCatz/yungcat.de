@@ -4,6 +4,7 @@ import Header from './Header.jsx'
 import Content from './content.jsx'
 import Form from './Form.jsx'
 import Projects from './Projects.jsx'
+import Knowledge from './Knowledge.jsx'
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
         <Content />
         <Form />
         <Projects />
+        <Knowledge />
       </>
     );
   }

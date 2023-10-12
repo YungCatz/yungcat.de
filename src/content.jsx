@@ -17,7 +17,7 @@ export default function Content() {
 
     return (
       <>
-        <div className="text-center text-lg/[32px] font-roboto font-normal py-20 px-10 my-[22rem] text-shadow leading-7">
+        <div className="text-center text-lg/[32px] font-roboto font-normal py-36 px-10 my-[22rem] text-shadow leading-7">
           <h1 className="font-bold text-3xl my-3 tracking-wider drop-shadow-5xl text-shadow">About Me!</h1>
           <p>My name is Andreas. My online nickname is YungCat.</p>
           <p>In September 2022, I started to teach myself</p>

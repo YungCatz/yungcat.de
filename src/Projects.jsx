@@ -1,39 +1,105 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Skeleton from '@mui/material/Skeleton';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: 'transparent',
-  textAlign: 'center',
-  color: 'white',
-}));
+import React, { useState, useEffect } from 'react';
+import { Container, Box, Grid, Skeleton } from '@mui/material';
 
 export default function ResponsiveGrid() {
+  const [gridConfig, setGridConfig] = useState({ xs: 1, sm: 1, md: 1, lg: 1 });
+
+  useEffect(() => {
+    function handleResize() {
+        if (window.innerWidth < 899) {
+          setGridConfig({ xs: 0, sm: 0 });
+        } else if (window.innerWidth < 1535) {
+          setGridConfig({ xs: 1, sm: 1, md: 1, lg: 1 });
+        } else {
+          setGridConfig({ xs: 1, sm: 1, md: 1, lg: 3 });
+        }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <Box sx={{ flexGrow: 1 }} paddingX={{ xs: 8, sm: 14, md: 16, lg: 22, xl: 34 }}>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 0, sm: 3, md: 8, lg: 8, xl: 8 }}
-      >
-        {Array.from(Array(6)).map((_, index) => (
-          <Grid xs={2} sm={4} md={4} lg={4} xl={2} key={index}  sx={{ maxWidth: '600px' }}>
-            <Item>
+    <Container
+      className="py-36"
+      maxWidth="xl"
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        maxWidth: "1600px",
+      }}
+    >
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            '& .MuiSkeleton-root': {
+              transition: 'transform 0.3s',
+            },
+            '& > *:hover .MuiSkeleton-root': {
+              transform: 'scale(1.05)',
+            },
+          }}
+        >
+          {Array.from(Array(gridConfig.xs)).map((_, index) => (
+            <Grid item xs={12} sm={12} md={6} lg={6} xl={4} key={index}>
               <Skeleton
                 sx={{
                   bgcolor: "rgba(255,255,255,.05)",
                   fontSize: "18rem",
                   borderRadius: "1.6rem",
+                  padding: "1rem",
                 }}
-                variant="rectangle"
+                variant="rectangular"
               />
-            </Item>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+            </Grid>
+          ))}
+          {Array.from(Array(gridConfig.sm)).map((_, index) => (
+            <Grid item xs={12} sm={12} md={6} lg={6} xl={4} key={index}>
+              <Skeleton
+                sx={{
+                  bgcolor: "rgba(255,255,255,.05)",
+                  fontSize: "18rem",
+                  borderRadius: "1.6rem",
+                  padding: "1rem",
+                }}
+                variant="rectangular"
+              />
+            </Grid>
+          ))}
+          {Array.from(Array(gridConfig.md)).map((_, index) => (
+            <Grid item xs={12} sm={12} md={6} lg={6} xl={4} key={index}>
+              <Skeleton
+                sx={{
+                  bgcolor: "rgba(255,255,255,.05)",
+                  fontSize: "18rem",
+                  borderRadius: "1.6rem",
+                  padding: "1rem",
+                }}
+                variant="rectangular"
+              />
+            </Grid>
+          ))}
+          {Array.from(Array(gridConfig.lg)).map((_, index) => (
+            <Grid item xs={12} sm={12} md={6} lg={6} xl={4} key={index}>
+              <Skeleton
+                sx={{
+                  bgcolor: "rgba(255,255,255,.05)",
+                  fontSize: "18rem",
+                  borderRadius: "1.6rem",
+                  padding: "1rem",
+                }}
+                variant="rectangular"
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </Container>
   );
 }
