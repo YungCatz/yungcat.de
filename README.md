@@ -1,3 +1,5 @@
 # yungcat.de
-https://pre.yungcat.de is my personal website which is work in progress.
-The App is built with React + Tailwindcss and MaterialUI librarys
+This is the v1.0, which currently shows a "Something is happening" page.
+It is a plain HTML, CSS and Javascript Application
+
+## v2.0 -> https://pre.yungcat.de
