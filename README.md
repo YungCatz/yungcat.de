@@ -2,6 +2,7 @@
 This is v2.0 . The current Version.
 
 This Web App uses:
+ - Vue.js
  - React
  - TailwindCSS
  - MaterialUI
