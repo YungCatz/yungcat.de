@@ -1,5 +1,14 @@
 # yungcat.de
-This is the v1.0, which currently shows a "Something is happening" page.
-It is a plain HTML, CSS and Javascript Application
+This is v2.0 . The current Version.
 
-## v2.0 -> https://pre.yungcat.de
+This Web App uses:
+ - React
+ - TailwindCSS
+ - MaterialUI
+
+To start the Application u need to do these steps:
+ - Install NodeJS via winget
+ - Inside the cloned project run: npm install and follow steps if needed
+ - Run: npm run dev to start the development environment
+
+👍
