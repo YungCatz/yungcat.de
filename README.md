@@ -1,5 +1,4 @@
 # yungcat.de
 
-is still a work in progress...
-
-The website should end up being something I can show... So people can see who I am and what I can do and have done.
+This is the v1.0, which currently shows a "Something is happening" page. It is a plain HTML, CSS and Javascript Application
+# v2.0 -> https://pre.yungcat.de
