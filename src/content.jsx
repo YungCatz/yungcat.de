@@ -22,7 +22,8 @@ export default function Content() {
           <p>My name is Andreas. My online nickname is YungCat.</p>
           <p>In September 2022, I started to teach myself</p>
           <p>how to use several "programming" languages</p>
-          <p>with the use of YouTube courses and many attempts at trying out code.</p>
+          <p>with the help of YouTube courses and many attempts at trying out code.</p>
+          <p>Right now I'm doing an apprenticeship in a company.</p>
           <p>I want to learn to be more fluent with the tools I use.</p>
           <p>Feel free to contact me and take a look at the projects I have done.</p>
         </div>

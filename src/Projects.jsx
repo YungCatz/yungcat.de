@@ -24,15 +24,17 @@ export default function ResponsiveGrid() {
   }, []);
 
   return (
+    <>
     <Container
       className="py-36"
       maxWidth="xl"
       sx={{
-        display: "flex",
-        justifyContent: "center",
         maxWidth: "1600px",
       }}
     >
+    <h1 className="font-roboto font-bold text-2xl my-3 tracking-[1rem] text-shadow text-center">
+      PROJECTS
+    </h1>
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
@@ -101,5 +103,6 @@ export default function ResponsiveGrid() {
         </Grid>
       </Box>
     </Container>
+    </>
   );
 }
