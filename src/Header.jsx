@@ -1,21 +1,10 @@
 import React from "react";
-import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 
-import Button from "@mui/material/Button";
 import {
-  CatchingPokemon,
   CatchingPokemonOutlined,
   DarkModeOutlined,
-  DarkModeRounded,
-  EmojiEmotions,
-  EmojiPeopleSharp,
-  Home,
-  HomeMaxOutlined,
-  HomeMaxRounded,
-  InsertEmoticonRounded,
 } from "@mui/icons-material";
-import { Icon, IconButton, Link, Switch, Tooltip } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 
 function openHomePage() {
   window.location.href = "./# ";
@@ -31,7 +20,6 @@ export default function Header() {
         <div className="absolute flex flex-col self-center text-center font-roboto">
           <h1 className="text-4xl font-[900] leading-9">Hi my name is Andreas</h1>
           <p className="text-lg/[40px]">I'm a <span className="line-through mr-1">Self-Learning</span>Software Developer</p>
-
         </div>
       </div>
 

@@ -8,12 +8,12 @@ import Knowledge from './Knowledge.jsx'
 
 export default function App() {
     return (
-      <>
-        <Header />
-        <Content />
-        <Form />
-        <Projects />
-        <Knowledge />
-      </>
+        <>
+            <Header/>
+            <Content/>
+            <Projects/>
+            <Knowledge/>
+            <Form/>
+        </>
     );
-  }
+}
