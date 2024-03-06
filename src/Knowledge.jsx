@@ -2,6 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/system/Unstable_Grid';
 import styled from '@mui/system/styled';
 import {Container, Tooltip} from '@mui/material';
+import waterColor from './assets/Water-Color.webp';
 import DevIcon from "devicon";
 
 const RoundedItem = styled('div')(() => ({
@@ -16,7 +17,7 @@ const Item = styled('div')(() => ({
 
     '&:hover': {
         border: '4px solid transparent',
-        borderImage: 'url(src/assets/waterColor-dark.png)',
+        borderImage: `url(${waterColor})`,
         borderImageSlice: '1',
     }
 }));

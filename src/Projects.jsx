@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Container, Box, Grid, Skeleton} from '@mui/material';
 import styled from "@mui/system/styled";
+import waterColor from './assets/Water-Color.webp';
 
 export default function ResponsiveGrid() {
     const [gridConfig, setGridConfig] = useState({xs: 1, sm: 1, md: 1, lg: 1});
@@ -29,9 +30,9 @@ export default function ResponsiveGrid() {
         letterSpacing: '4px',
 
         borderBottom: '2px solid transparent',
-        borderImage: 'url(src/assets/waterColor-dark.png)',
+        borderImage: `url(${waterColor})`,
         borderImageSlice: '1',
-        padding: '2rem 1rem 0rem 1rem',
+        padding: '2rem .6rem .4rem .6rem',
     }));
 
     return (
@@ -113,7 +114,7 @@ export default function ResponsiveGrid() {
                         ))}
                     </Grid>
                 </Box>
-                <AnchorWrapper href={'/projects'}>
+                <AnchorWrapper href={'/projects'} className={'seemore-anchor'}>
                     &gt; SEE MORE
                 </AnchorWrapper>
             </Container>
