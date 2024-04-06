@@ -22,6 +22,21 @@ const Item = styled('div')(() => ({
     }
 }));
 
+// eslint-disable-next-line react/prop-types
+function IconGridItem({title, icon}) {
+    return (
+        <Grid className="hover-info relative">
+            <Tooltip title={title}>
+                <RoundedItem>
+                    <Item>
+                        <i className={`devicon-${icon}-plain text-7xl`}></i>
+                    </Item>
+                </RoundedItem>
+            </Tooltip>
+        </Grid>
+    )
+}
+
 export default function Knowledge() {
 
     return (
@@ -45,145 +60,21 @@ export default function Knowledge() {
                         },
                     }}
                 >
-                    <Grid className="hover-info relative">
-                        <Tooltip title="JavaScript">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-javascript-plain text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="HTML">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-html5-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="CSS">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-css3-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="TailwindCSS">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-tailwindcss-original-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="MaterialUI">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-materialui-plain text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="Bootstrap">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-bootstrap-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="NodeJS">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-nodejs-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="Figma">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-figma-plain text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="Java">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-java-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="React">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-react-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="VueJS">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-vuejs-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="Spring">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-spring-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="MySQL">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-mysql-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
-
-                    <Grid>
-                        <Tooltip title="Git">
-                            <RoundedItem>
-                                <Item>
-                                    <i className="devicon-git-plain-wordmark text-7xl"></i>
-                                </Item>
-                            </RoundedItem>
-                        </Tooltip>
-                    </Grid>
+                    <IconGridItem title="JavaScript" icon="javascript" />
+                    <IconGridItem title="HTML" icon="html5" />
+                    <IconGridItem title="CSS" icon="css3" />
+                    <IconGridItem title="TailwindCSS" icon="tailwindcss" />
+                    <IconGridItem title="MaterialUI" icon="materialui" />
+                    <IconGridItem title="Bootstrap" icon="bootstrap" />
+                    <IconGridItem title="NodeJS" icon="nodejs" />
+                    <IconGridItem title="Figma" icon="figma" />
+                    <IconGridItem title="Java" icon="java" />
+                    <IconGridItem title="React" icon="react" />
+                    <IconGridItem title="VueJS" icon="vuejs" />
+                    <IconGridItem title="Spring" icon="spring" />
+                    <IconGridItem title="MySQL" icon="mysql" />
+                    <IconGridItem title="Git" icon="git" />
+                    <IconGridItem title="Linux" icon="linux" />
                 </Grid>
             </Container>
         </>
